@@ -66,7 +66,7 @@ systemctl stop nginx
 
 # // INSTALL CERTIFICATES
 mkdir /root/.acme.sh
-curl https://raw.githubusercontent.com/NevermoreSSH/sapphire/main/acme.sh -o /root/.acme.sh/acme.sh
+curl https://raw.githubusercontent.com/irawancandra6699/vpsme/main/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
 /root/.acme.sh/acme.sh --upgrade --auto-upgrade
 /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
@@ -1200,10 +1200,10 @@ systemctl restart xray@trojannone
 
 # download script
 cd /usr/bin
-wget -O port-xray "https://raw.githubusercontent.com/${GitUser}/sapphire/main/change-port/port-xray.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/${GitUser}/sapphire/main/cert.sh"
-wget -O trojaan "https://raw.githubusercontent.com/${GitUser}/sapphire/main/menu/trojaan.sh"
-wget -O xraay "https://raw.githubusercontent.com/${GitUser}/sapphire/main/menu/xraay.sh"
+wget -O port-xray "https://raw.githubusercontent.com/${GitUser}/vpsme/main/change-port/port-xray.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/${GitUser}/vpsme/main/cert.sh"
+wget -O trojaan "https://raw.githubusercontent.com/${GitUser}/vpsme/main/menu/trojaan.sh"
+wget -O xraay "https://raw.githubusercontent.com/${GitUser}/vpsme/main/menu/xraay.sh"
 chmod +x port-xray
 chmod +x certv2ray
 chmod +x trojaan
