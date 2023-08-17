@@ -122,7 +122,7 @@ ascii=$(cat /usr/bin/test)
 clear
 echo -e "\e[$banner_colour"
 figlet -f $ascii "$banner"
-echo -e "\e[$text VPS Script"
+echo -e "\e[$text SC CANDRA-STORE"
 echo -e " \e[$line╒════════════════════════════════════════════════════════════╕\e[m"
 echo -e "  \e[$back_text                    \e[30m[\e[$box SERVER INFORMATION\e[30m ]\e[1m                  \e[m"
 echo -e " \e[$line╘════════════════════════════════════════════════════════════╛\e[m"
@@ -160,7 +160,6 @@ echo -e "  \e[$number (•4)\e[m \e[$below SYSTEM MENU\e[m          \e[$number (
 echo -e "  \e[$number (•5)\e[m \e[$below CHECK RUNNING\e[m        \e[$number (•9)\e[m \e[$below INFO ALL PORT\e[m"
 echo -e "  \e[$number (•6)\e[m \e[$below CHANGE PORT\e[m          \e[$number (10)\e[m \e[$below CLEAR EXPIRED FILES\e[m"
 echo -e "  \e[$number (•7)\e[m \e[$below REBOOT VPS\e[m           \e[$number (11)\e[m \e[$below CLEAR LOG VPS\e[m"
-echo -e "  \e[$number (•12)\e[m \e[$below addip\e[m
 echo -e "
 echo -e "  \e[$below[Ctrl + C] For exit from main menu\e[m"
 echo -e " \e[$line╒════════════════════════════════════════════════════════════╕\e[m"
