@@ -107,6 +107,11 @@ sts=$default_email
 else
 sts=$new_email
 fi
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 # email
 mkdir -p /usr/local/etc/xray/
 touch /usr/local/etc/xray/email
@@ -129,9 +134,19 @@ echo "IP=" >> /var/lib/premium-script/ipvps.conf
 echo $host1 > /root/domain
 echo ""
 elif [[ $host == "2" ]]; then
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 #install cf
 wget https://raw.githubusercontent.com/${GitUser}/vpsme/main/install/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
+clear
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
 clear
 else
 echo -e "Random Subdomain/Domain is used"
@@ -139,46 +154,94 @@ wget https://raw.githubusercontent.com/${GitUser}/vpsme/main/install/cf.sh && ch
 rm -f /root/cf.sh
 clear
 fi
-echo ""
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
 clear
 echo -e "\e[0;32mREADY FOR INSTALLATION SCRIPT...\e[0m"
 sleep 2
 #install ssh ovpn
-echo -e "\e[0;32mINSTALLING SSH & OVPN...\e[0m"
-sleep 1
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 wget https://raw.githubusercontent.com/${GitUser}/vpsme/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-echo -e "\e[0;32mDONE INSTALLING SSH & OVPN\e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
 clear
 #install Xray
-echo -e "\e[0;32mINSTALLING XRAY CORE...\e[0m"
-sleep 1
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 wget https://raw.githubusercontent.com/${GitUser}/vpsme/main/install/ins-xray.sh && chmod +x ins-xray.sh && screen -S ins-xray ./ins-xray.sh
 echo -e "\e[0;32mDONE INSTALLING XRAY CORE\e[0m"
 clear
 #install ohp-server
-echo -e "\e[0;32mINSTALLING OHP PORT...\e[0m"
-sleep 1
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 wget https://raw.githubusercontent.com/${GitUser}/vpsme/main/install/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 wget https://raw.githubusercontent.com/${GitUser}/vpsme/main/install/ohp-dropbear.sh && chmod +x ohp-dropbear.sh && ./ohp-dropbear.sh
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 wget https://raw.githubusercontent.com/${GitUser}/vpsme/main/install/ohp-ssh.sh && chmod +x ohp-ssh.sh && ./ohp-ssh.sh
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 echo -e "\e[0;32mDONE INSTALLING OHP PORT\e[0m"
 clear
 #install websocket
-echo -e "\e[0;32mINSTALLING WEBSOCKET PORT...\e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 wget https://raw.githubusercontent.com/${GitUser}/vpsme/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
-echo -e "\e[0;32mDONE INSTALLING WEBSOCKET PORT\e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
 clear
 #install SET-BR
-echo -e "\e[0;32mINSTALLING SET-BR...\e[0m"
-sleep 1
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 wget https://raw.githubusercontent.com/${GitUser}/vpsme/main/install/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-echo -e "\e[0;32mDONE INSTALLING SET-BR...\e[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
 clear
 # set time GMT +8
 ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
 # install clouflare JQ
 apt install jq curl -y
 # install webserver
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
@@ -205,6 +268,11 @@ echo "47m" > /etc/back
 echo "1;35m" > /etc/number
 echo 3d > /usr/bin/test
 # Version
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        Install SCRIPT           $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 ver=$( curl https://raw.githubusercontent.com/${GitUser}/version/main/version.conf )
 history -c
 echo "$ver" > /home/ver
